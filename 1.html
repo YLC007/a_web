@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!-- 声明文档类型为 HTML5，告诉浏览器按照 HTML5 规则解析该文档 -->
+<html lang="zh-CN"> <!-- 开始 HTML 文档，设置语言为简体中文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码为 UTF-8，确保页面内容正确显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 设置视口，确保在不同屏幕上自适应显示 -->
+    <meta name="theme-color" content="#000000"/> <!-- 设置浏览器的主题颜色，影响移动设备的顶部状态栏颜色 -->
+    <meta name="description" content="网页描述111"> <!-- 设置网页的描述，用于搜索引擎的预览 -->
+    <title>必应搜索111</title> <!-- 设置网页的标题，显示在浏览器标签页上 -->
+    <style> <!-- 开始样式定义 -->
+        body { <!-- 定义页面主体的样式 -->
+            font-family: Arial, sans-serif; <!-- 设置字体为 Arial，如果没有 Arial 则使用 sans-serif -->
+            text-align: center; <!-- 使所有文本内容居中显示 -->
+            margin: 0; <!-- 移除默认的页边距 -->
+            padding: 0; <!-- 移除默认的内边距 -->
+            background-color: #000000; <!-- 设置背景颜色为浅灰色 -->
+        }
+        .container { <!-- 定义容器的样式 -->
+            display: flex; <!-- 使用 flexbox 布局 -->
+            flex-direction: column; <!-- 设置子元素的排列方向为竖直排列 -->
+            align-items: center; <!-- 水平居中对齐容器内的元素 -->
+            justify-content: center; <!-- 垂直居中对齐容器内的元素 -->
+            height: 100vh; <!-- 设置容器高度为视口的 100% -->
+        }
+        .logo { <!-- 设置 logo 图片的样式 -->
+            width: 200px; <!-- 设置图片宽度为 200px -->
+            margin-bottom: 20px; <!-- 设置图片底部外边距为 20px，给搜索框留出空间 -->
+        }
+        .search-bar { <!-- 设置搜索框的样式 -->
+            width: 50%; <!-- 设置搜索框宽度为父容器的 50% -->
+            max-width: 600px; <!-- 设置搜索框最大宽度为 600px -->
+            padding: 10px; <!-- 设置搜索框内部内边距为 10px -->
+            font-size: 16px; <!-- 设置字体大小为 16px -->
+            border-radius: 30px; <!-- 设置圆角，值越大圆角越明显 -->
+            border: 1px solid #ccc; <!-- 设置搜索框边框为浅灰色，1px 宽度 -->
+            outline: none; <!-- 移除点击输入框时的外边框 -->
+            margin-bottom: 20px; <!-- 设置搜索框底部外边距为 20px，给按钮留出空间 -->
+        }
+        .search-button { <!-- 设置搜索按钮的样式 -->
+            padding: 10px 20px; <!-- 设置按钮内边距，垂直方向 10px，水平方向 20px -->
+            font-size: 16px; <!-- 设置按钮字体大小为 16px -->
+            color: white; <!-- 设置按钮文本颜色为白色 -->
+            background-color: #4F4F4F; <!-- 设置按钮背景颜色为深灰色 -->
+            border: none; <!-- 移除按钮的边框 -->
+            border-radius: 30px; <!-- 设置按钮圆角 -->
+            cursor: pointer; <!-- 设置鼠标悬停时显示为点击手势 -->
+        }
+        .search-button:hover { <!-- 设置鼠标悬停时的按钮样式 -->
+            background-color: #333; <!-- 当鼠标悬停时，按钮背景颜色变为更深的灰色 -->
+        }
+    </style>
+</head>
+<body> <!-- 开始网页主体内容部分 -->
+    <div class="container"> <!-- 创建一个包含所有元素的容器并应用居中样式 -->
+        <img src="https://www.bing.com/th?id=OHR.AshyWoodswallow_ZH-CN3224168805_tmb.jpg" alt="Bing Logo" class="logo"> <!-- 显示必应的 logo 图片 -->
+        <input type="text" class="search-bar" placeholder="搜索内容..."> <!-- 创建一个文本输入框，提示用户输入搜索内容 -->
+        <button class="search-button">搜索</button> <!-- 创建一个搜索按钮 -->
+    </div>
+</body>
+</html>
